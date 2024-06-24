@@ -4,6 +4,25 @@ body {
   background: #23262d;
 }
 
+/*.checking {
+  width: 10em;
+  height: 5ex;
+  background-color: #f9f9f9;
+  border: 2px solid #77c1f2;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #1d45bd;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.checking:hover {
+  width: 15%;
+  height: 7ex;
+  background-color: #4f76f6;
+  color: white;
+}*/
+
 .all {
   width: 400px;
   height: 400px;
@@ -19,6 +38,9 @@ body {
 @for $i from 0 through 8 {
   .container:nth-child(#{$i + 1}) {
     background: hsl($i * 40%, 100%, 74%);
+    background-image: url("lightbulb.png");
+    background-size: cover;
+    background-position: center center;
   }
   .all:has(.container:nth-child(#{$i + 1}):hover) {
     $r: floor($i / 3 + 1);
