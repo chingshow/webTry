@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/AvaChi.css">
+    <link rel="stylesheet" type="text/css" href="./styles/AvaMedia.css">
+    <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title id="headTitle"></title>
+</head>
+
+<body>
+<div class="topboard">
+    <div class="topboard-left">
+        <div class="topboard-left-1" style="text-align: center;"></div>
+        <div class="topboard-left-2" style="text-align: center;"></div>
+
+    </div>
+    <div class="topboard-middle"></div>
+    <div class="topboard-right">
+        <div class="TBR-items-NULL"></div>
+        <div class="TBR-items-NULL"></div>
+        <a href="old/index.html" class="TBR-items">
+            <div>Chinese</div>
+        </a>
+        <a href="ForumEN.html" class="TBR-items">
+            <div>English</div>
+        </a>
+        <!-- 下拉選單觸發器 -->
+        <div class="dropdown-trigger">Menu</div>
+        <div class="dropdown-menu">
+            <a href="#forum" class="TBR-items">
+                <div>Introduction</div>
+            </a>
+            <a href="#talker" class="TBR-items">
+                <div>Speakers</div>
+            </a>
+            <a href="#agenda" class="TBR-items">
+                <div>Agenda</div>
+            </a>
+            <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">
+                <div>Contact</div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="topboard-coverd"></div>
+
+<!-- contents -->
+<div class="imageKV"> </div>
+<div class="gradient-background">
+    <div class="session">
+        <div class="session_title">
+            <div class="session_title_txt"  id="forum"  style="color: aliceblue;">Introduction</div>
+        </div>
+        <div class="IM_contant" id="IM_content" style="color: aliceblue;">
+            <p>
+
+            </p>
+            <p>&#20;</p>
+        </div>
+    </div>
+
+    <div class="session" id="speakers">
+        <div class="session_title">
+            <div class="session_title_txt"  id="talker"  style="color: #000000;">Speakers</div>
+        </div>
+    </div>
+
+    <div class="session-agenda">
+        <div class="session_title">
+            <div class="session_title_txt"  id="agenda"  style="color: black;">Agenda</div>
+            <div class="agenda">
+                <picture>
+                    <!-- 寬度小於768使用agendaChi_media.png，否則使用agendaChi.png -->
+                    <source id="media" media="(max-width: 768px)" srcset="">
+                    <img id="agendaImage" src="" alt="agenda.png">
+                </picture>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="session">
+        <div class="faq" id="faq">
+            <div class="session_title">
+                <div class="session_title_txt"  style="color: black;">
+                    FAQ
+                </div>
+                <div class="faq-item">
+                    <ul id="qas">
+                        <!--<li>
+                            <div class="qa-title"></div>
+                            <div class="qa-content"></div>
+                        </li>-->
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="session">
+        <div class="session_title">
+            <div class="session_title_txt" style="color: black;">Registration</div>
+        </div>
+        <div class="portal">
+            <div class="portal-left" id="portalLeft">
+                <a id="linkLeft" href="">
+                    <img id="imageLeft" src="" alt="signUpWebsite1.png">
+                </a>
+            </div>
+            <div class="portal-right" id="portalRight">
+                <a id="linkRight" href="">
+                    <img id="imageRight" src="" alt="signUpWebsite2.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="white-board">
+    <div class="session">
+        <div class="session_title">
+            <div class="session_title_txt"  style="color: black;">Organizer</div>
+        </div>
+        <div class="organizer">
+            <img src="./images/organizer.png" alt="organizer.png">
+        </div>
+    </div>
+
+    <div class="session" style="padding-top: 0;margin-top: 0;padding-bottom: 0">
+        <div class="session_title">
+            <div class="session_title_txt" style="color: black;">Co-organizer</div>
+        </div>
+        <div class="organizer">
+            <img id="co-organizerImage" src="" alt="co-org.png">
+        </div>
+    </div>
+
+    <div class="session">
+        <div class="session_title">
+            <div class="session_title_txt"  style="color: black;">Sponsor</div>
+        </div>
+        <div class="sponsor">
+            <img id="sponsorImage" src="" alt="sponsor.png">
+        </div>
+    </div>
+</div>
+
+<div class="endboard">
+    <div class="endboard-up">
+        <div class="contact_us">Contact US</div>
+    </div>
+    <div class="endboard-down">
+        <div class="phone">Phone: +886-2-27322701</div>
+        <div class="address">Address: 3F.-2, No. 56, Lane 258, Ruiguang Rd, Neihu District, Taipei City</div>
+    </div>
+</div>
+
+<!-- functions -->
+<a href="#top">
+    <div class=go-top></div>
+</a>
+<div class="lefticon"></div>
+</body>
+
+<script src="inputTry.js"></script>
+
