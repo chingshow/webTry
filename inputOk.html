@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/AvaChi.css">
+    <link rel="stylesheet" type="text/css" href="./styles/AvaMedia.css">
+    <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title id="headTitle"></title>
+</head>
+
+<body>
+<div class="topboard">
+    <div class="topboard-left">
+        <div class="topboard-left-1" style="text-align: center;"></div>
+        <div class="topboard-left-2" style="text-align: center;"></div>
+
+    </div>
+    <div class="topboard-middle"></div>
+    <div class="topboard-right">
+        <div class="TBR-items-NULL"></div>
+        <div class="TBR-items-NULL"></div>
+        <a href="old/index.html" class="TBR-items">
+            <div>Chinese</div>
+        </a>
+        <a href="ForumEN.html" class="TBR-items">
+            <div>English</div>
+        </a>
+        <!-- 下拉選單觸發器 -->
+        <div class="dropdown-trigger">Menu</div>
+        <div class="dropdown-menu">
+            <a href="#forum" class="TBR-items">
+                <div>Introduction</div>
+            </a>
+            <a href="#talker" class="TBR-items">
+                <div>Speakers</div>
+            </a>
+            <a href="#agenda" class="TBR-items">
+                <div>Agenda</div>
+            </a>
+            <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">
+                <div>Contact</div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="topboard-coverd"></div>
+
+<!-- contents -->
+<div class="imageKV"> </div>
+<div class="gradient-background">
+    <div class="session">
+        <div class="session_title">
+            <div class="session_title_txt"  id="forum"  style="color: aliceblue;">Introduction</div>
+        </div>
+        <div class="IM_contant" id="IM_content" style="color: aliceblue;">
+            <p>
+
+            </p>
+            <p>&#20;</p>
+        </div>
+    </div>
+
+    <div class="session" id="speakers">
+        <div class="session_title">
+            <div class="session_title_txt"  id="talker"  style="color: #000000;">Speakers</div>
+        </div>
+    </div>
+
+    <div class="session-agenda">
+        <div class="session_title">
+            <div class="session_title_txt"  id="agenda"  style="color: black;">Agenda</div>
+            <div class="agenda">
+                <picture>
+                    <!-- 寬度小於768使用agendaChi_media.png，否則使用agendaChi.png -->
+                    <source id="media" media="(max-width: 768px)" srcset="">
+                    <img id="agendaImage" src="" alt="agenda.png">
+                </picture>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="session">
+        <div class="faq" id="faq">
+            <div class="session_title">
+                <div class="session_title_txt"  style="color: black;">
+                    FAQ
+                </div>
+                <div class="faq-item">
+                    <ul id="qas">
+                        <!--<li>
+                            <div class="qa-title"></div>
+                            <div class="qa-content"></div>
+                        </li>-->
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="session">
+        <div class="session_title">
+            <div class="session_title_txt" style="color: black;">Registration</div>
+        </div>
+        <div class="portal">
+            <div class="portal-left" id="portalLeft">
+                <a id="linkLeft" href="">
+                    <img id="imageLeft" src="" alt="signUpWebsite1.png">
+                </a>
+            </div>
+            <div class="portal-right" id="portalRight">
+                <a id="linkRight" href="">
+                    <img id="imageRight" src="" alt="signUpWebsite2.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="white-board">
+    <div class="session">
+        <div class="session_title">
+            <div class="session_title_txt"  style="color: black;">Organizer</div>
+        </div>
+        <div class="organizer">
+            <img src="./images/organizer.png" alt="organizer.png">
+        </div>
+    </div>
+
+    <div class="session" style="padding-top: 0;margin-top: 0;padding-bottom: 0">
+        <div class="session_title">
+            <div class="session_title_txt" style="color: black;">Co-organizer</div>
+        </div>
+        <div class="organizer">
+            <img id="co-organizerImage" src="" alt="co-org.png">
+        </div>
+    </div>
+
+    <div class="session">
+        <div class="session_title">
+            <div class="session_title_txt"  style="color: black;">Sponsor</div>
+        </div>
+        <div class="sponsor">
+            <img id="sponsorImage" src="" alt="sponsor.png">
+        </div>
+    </div>
+</div>
+
+<div class="endboard">
+    <div class="endboard-up">
+        <div class="contact_us">Contact US</div>
+    </div>
+    <div class="endboard-down">
+        <div class="phone">Phone: +886-2-27322701</div>
+        <div class="address">Address: 3F.-2, No. 56, Lane 258, Ruiguang Rd, Neihu District, Taipei City</div>
+    </div>
+</div>
+
+<!-- functions -->
+<a href="#top">
+    <div class=go-top></div>
+</a>
+<div class="lefticon"></div>
+</body>
+
+<script>
+    const input = {
+        "headTitle" : "\"Activity Title\"",
+        "topboardLeft" : ["Activity Title", "1095"],
+        "content" : {
+            "imageKV" : "./images/imageKV.png",
+            "gradient" : {
+                "background" : "./images/background.png",
+                "session1" :  "​introduction of the activity." +
+                    "Good Morning Everyone!",
+                "session2" : [{
+                    "name" : "Your Name",
+                    "photo" : "./images/javascript.jpg",
+                    "title" : "Where you are from, what you can do",
+                    "description" : "Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself." +
+                        "Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself." +
+                        "Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself." +
+                        "Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself." +
+                        "Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself."
+                },{
+                    "name" : "Your Name",
+                    "photo" : "./images/html.jpg",
+                    "title" : "Where you are from, what you can do",
+                    "description" : "Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself." +
+                        "Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself." +
+                        "Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself." +
+                        "Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself." +
+                        "Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself."
+                },{
+                    "name" : "Your Name",
+                    "photo" : "./images/css.jpg",
+                    "title" : "Where you are from, what you can do",
+                    "description" : "Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself." +
+                        "Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself." +
+                        "Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself." +
+                        "Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself." +
+                        "Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself. Introduce yourself."
+                }],
+                "agenda" : "./images/Agenda.png",
+                "session3" : [{
+                    "title" : "Questions1",
+                    "content" : "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. "
+                },{
+                    "title" : "Questions2",
+                    "content" : "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. "
+                },{
+                    "title" : "Questions3",
+                    "content" : "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. "
+                },{
+                    "title" : "Questions4",
+                    "content" : "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. "
+                },{
+                    "title" : "Questions5",
+                    "content" : "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. " +
+                        "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers. "
+                }],
+                "session4" : [{
+                    "link" : "https://www.accupass.com/go/Avatar2023",
+                    "img" : "./images/signUpWebsite1.png"
+                },{
+                    "link" : "https://www.eventbrite.com/e/avatar-medicine-forum-2023-tickets-697936054527?aff=oddtdtcreator",
+                    "img" : "./images/signUpWebsite2.png"
+                }]
+            },
+            "whiteboard" : {
+                "session2" : "./images/co-org.png",
+                "session3" : "./images/sponsor.png"
+            }
+        }
+    }
+
+    TextandImageInput()
+    showSpeakers();
+    showFaq();
+    function createFaq(index, session){
+        var newQa = document.createElement("li");
+
+        newQa.innerHTML = '<div class="qa-title">' + session[index].title + '</div>'
+            + '<div class="qa-content">' + session[index].content + '</div>';
+        return newQa;
+    }
+
+    function showFaq(){
+        const session = input.content.gradient.session3;
+        const len = session.length;
+        const all = document.getElementById("qas");
+        var height = 17 + 8*len;
+        document.getElementById("faq").style.height = `${height}vw`;
+
+        for(let i = 0; i < len; i++){
+            var newQa = createFaq(i, session);
+            all.appendChild(newQa);
+        }
+    }
+
+    function createIntro(mode, index, session){
+        var newIntro = document.createElement("div");
+        newIntro.id = `intro${index}`;
+
+        if(mode === 0){
+            newIntro.className = "vip_intro normal-direction";
+        } else{ newIntro.className = "vip_intro reverse-direction"}
+
+        newIntro.innerHTML = '<div class="vip_photo"> <img id="speakerImg' + index + '" src="' + session[index].photo + '" alt="VIP Photo"></div>'
+            + '<div class="vip_margin"> <div class="vip_name">' + session[index].name + '</div>'
+            + '<div class="vip_title">' + session[index].title + '</div>'
+            + '<div class="vip_description">' + session[index].description + '</div></div>';
+        return newIntro;
+    }
+
+    function showSpeakers(){
+        const session = input.content.gradient.session2;
+        const len = session.length;
+        const all = document.getElementById("speakers");
+        for(let i = 0; i < len; i++){
+            var newSpeaker = createIntro((i%2), i, session);
+            all.appendChild(newSpeaker);
+        }
+    }
+
+    function TextandImageInput(){
+        document.getElementById("headTitle").text = input.headTitle;
+        // topboard
+        document.getElementsByClassName("topboard-left-1").item(0).textContent = input.topboardLeft[0];
+        document.getElementsByClassName("topboard-left-2").item(0).textContent = input.topboardLeft[1];
+        // content
+        document.getElementsByClassName("imageKV").item(0).style.backgroundImage = `url(${input.content.imageKV})`;
+        document.getElementsByClassName("gradient-background").item(0).style.backgroundImage = `url(${input.content.gradient.background})`;
+        document.getElementById("IM_content").textContent = input.content.gradient.session1;
+        //agenda
+        document.getElementById("media").srcset = input.content.gradient.agenda;
+        document.getElementById("agendaImage").src = input.content.gradient.agenda;
+        //registration(看之後數量看是否需要改成迴圈)
+        document.getElementById("linkLeft").href = input.content.gradient.session4[0].link;
+        document.getElementById("imageLeft").src = input.content.gradient.session4[0].img;
+        document.getElementById("linkRight").href = input.content.gradient.session4[1].link;
+        document.getElementById("imageRight").src = input.content.gradient.session4[1].img;
+        //co-organizer
+        document.getElementById("co-organizerImage").src = input.content.whiteboard.session2;
+        //sponsor
+        document.getElementById("sponsorImage").src = input.content.whiteboard.session3;
+    }
+
+
+
+    $(".qa-title").click(function () {
+        $(".qa-content").slideUp();
+        $(".qa-title.on").removeClass("on");
+        $(this).next().stop().slideDown();
+        $(this).stop().addClass("on");
+    });
+
+    $(document).ready(function () {
+        $('a[href^="#"]').on('click', function (event) {
+            var target = $(this.getAttribute('href'));
+
+            if (target.length) {
+                event.preventDefault();
+
+                var offset = 130;
+
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top - offset
+                }, 1000);
+            }
+        });
+    });
+
+    document.addEventListener('touchstart', function (e) {
+        let startX = e.touches[0].pageX;
+        let startY = e.touches[0].pageY;
+
+        document.addEventListener('touchmove', function (e) {
+            let moveX = e.touches[0].pageX;
+            let moveY = e.touches[0].pageY;
+
+            if (Math.abs(moveX - startX) > Math.abs(moveY - startY)) {
+                e.preventDefault();
+            }
+        }, { passive: false });
+    }, { passive: false });
+
+</script>
+

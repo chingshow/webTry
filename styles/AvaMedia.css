@@ -1,0 +1,248 @@
+@media (max-width: 768px) {
+
+    html,
+    body,
+    div,
+    img:lang(en) {
+        margin: -0.5px;
+        padding: 0px;
+        font-family: 'Kanit', sans-serif;
+    }
+
+    .topboard {
+        height: 10vh;
+    }
+
+    .topboard-left {
+        display: none;
+        /* width: 50%; */
+    }
+
+    .topboard-left-1 {
+        font-size: 6vw;
+    }
+
+    .topboard-left-2 {
+        font-size: 3.5vw;
+    }
+
+    .topboard-right {
+        width: 100%;
+    }
+
+    /* ============================================= .dropdown-menu ================================= */
+    .TBR-items {
+        font-size: 3.2vw;
+        width: 20%;
+    }
+
+    .TBR-items-NULL {
+        font-size: 2.5vw;
+        width: 20%;
+    }
+
+    .session_title {
+        font-size: 6vw;
+    }
+
+    .IM_contant {
+        font-size: 3vw;
+    }
+
+    /*============================== vip ==================================*/
+    .vip_intro {
+        margin-bottom: 10vw;
+
+        display: flex;
+        flex-direction: column
+    }
+
+    .vip_photo img {
+        width: 40vw;
+        height: 40vw;
+
+        margin-top: 10vw;
+    }
+
+    .vip_intro.reverse-direction {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* 對於反方向，設定右邊邊距 */
+    .vip_intro.reverse-direction .vip_margin {
+        margin-right: 3vw;
+        margin-left: 0;
+    }
+
+    /* 反方向的名稱和標題右對齊 */
+    .vip_intro.reverse-direction .vip_name,
+    .vip_intro.reverse-direction .vip_title {
+        text-align: left;
+    }
+
+    .vip_name {
+        font-size: 5vw;
+    }
+
+    .vip_title {
+        font-size: 3vw;
+    }
+
+    .vip_description p {
+        font-size: 3vw;
+    }
+
+    /*============================ faq =================================*/
+    /* 伸縮FAQ */
+    .faq-item {
+        margin-left: -5vw;
+        width: 95vw;
+        display: flex;
+    }
+
+    .faq-item ul {
+        width: 80%;
+    }
+
+    .qa-title {
+        font-size: 5vw;
+    }
+
+    .qa-content {
+        font-size: 4vw;
+    }
+
+    .contact_us {
+        font-size: 5vw;
+    }
+
+    .phone {
+        font-size: 4vw;
+    }
+
+    .address {
+        font-size: 4vw;
+    }
+
+    .faq {
+        height: 100vw;
+    }
+
+    /*================================= img ======================================*/
+    .portal {
+        height: 60vw;;
+        margin-top: 10vw;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portal-left {
+        width: 75%;
+
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    .portal-left img {
+        background-color: #fff;
+
+        width: 70vw;
+        height: auto;
+    }
+
+    .portal-right {
+        width: 75%;
+
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .portal-right img {
+        background-color: #fff;
+
+        width: 60vw;
+        height: auto;
+    }
+
+    .session-agenda {
+        height: 75vw;
+    }
+
+
+    .agenda {
+        width: 99vw;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .agenda img {
+        width: 80vw;
+    }
+
+
+    .organizer {
+        width: 80vw;
+        height: 20vw;
+    }
+
+    .organizer img {
+        width: 60vw;
+    }
+
+    .sponsor {
+        width: 80vw;
+        height: 50vw;;
+    }
+
+    .sponsor img {
+        width: 60vw;
+    }
+
+    /*================================== endboard ===============================*/
+    .endboard-down {
+        flex-direction: column;
+    }
+
+    .phone {
+        width: 100vw;
+        height: 50%;
+
+        font-size: 3vw;
+        color: #ffffff;
+
+        display: flex;
+        align-items: center;
+    }
+
+
+    .address {
+        width: 100vw;
+        height: 50%;
+
+        font-size: 2.5vw;
+        color: #ffffff;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .go-top {
+        right: 16vw;
+
+    }
+
+    .dogicon {
+        right: 14vw;
+    }
+
+    .endboard {
+        overflow-x: hidden;
+    }
+
+    .topboard-coverd {
+        height: 10vh;
+    }
+}
